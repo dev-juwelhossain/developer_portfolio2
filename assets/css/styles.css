@@ -1,0 +1,79 @@
+*{
+
+scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+
+}
+   @media (min-width: 1024px) {
+    .nav-glow::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1.5px;
+      width: 100%;
+      background: radial-gradient(circle, #87F5FF 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .nav-glow:hover::before,
+    .nav-glow.active::before {
+      opacity: 1;
+    }
+  }
+ 
+
+.services{
+
+background-image: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(20, 30, 57, 1) 35%, rgba(48, 75, 110, 1) 100%);
+
+}
+
+.card{
+  border-top-right-radius: 100px;
+}
+
+.second-card{
+  border-top-left-radius: 70px;
+  
+}
+.second-card img{
+  border-top-left-radius: 50px;
+}
+
+/* skills */
+.skills{
+  background: 090C28;
+  background-image: linear-gradient(to bottom, #263b58, #1e2f4b, #16233d, #0e1730, #070824);
+}
+
+
+/* mini card */
+.mini-card{
+  border-top-right-radius: 50px;
+}
+
+/* experience card  */
+.exp-card{
+  border-top-right-radius:70px;
+  border-bottom-left-radius: 70px;
+}
+
+
+/* static card  */
+.static-card{
+  border-top-right-radius: 70px;
+}
+
+
+/* contact card */
+.contact-card{
+  border-top-right-radius: 120px;
+ 
+}
